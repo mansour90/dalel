@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application1/core/utils/app_assets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ListView(
-          children: [
-            Container(height: 350, color: Colors.deepPurple),
-            Container(height: 350, color: Colors.deepPurple),
-            Container(height: 350, color: Colors.deepPurple[200]),
-          ],
+        body: Container(
+          child: Image.asset(Assets.imagesOnBoarding),
         ),
       ),
     );
