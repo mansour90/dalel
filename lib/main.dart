@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application1/core/utils/app_assets.dart';
+import 'package:flutter_application1/core/routes/app_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Dalel());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Dalel extends StatelessWidget {
+  const Dalel({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Container(
-          child: Image.asset(Assets.imagesOnBoarding),
-        ),
-      ),
+      routerConfig: router,
     );
   }
 }
+
